@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(20, 3, 174), rgb(25, 143, 102));
+            text-align: center;
+            color: #fff;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:  translate(-50%, -50%);
+            width: 50%;
+            background-color: rgba(0,0,0,0.5);
+            padding: len;
+            border-radius: 10px;
+        }
+        button{
+            background-color: slateblue;
+            color: #fff;
+            border: none;
+            padding: len;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-step">
+            <p>Coloque a quantidade consumida:</p>
+            <input type="Number" id="quantidade" value="">
+            <p>Coloque o valor unitario do kwh:</p>
+            <input type="Number" id="vl" value="">
+            <p><button onclick=ex4()>CALCULAR</button></p>
+            <p id="valorkwh">O valor consumo é: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
