@@ -37,4 +37,16 @@ app.get('/formacao', (req, res) => {
 });
 
 
-    
+app.get('/realizações', (req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Access-Control-Allow-Origin', '*'); 
+    var db = new sqlite3.Database(DBPATH); // Abre o banco
+    var sql = 'SELECT * FROM realizações';
+    db.all(sql, [],  (err, rows ) => {
+        if (err) {
+                throw err;
+         }
+        res.json(rows);
+    });
+    db.close(); // Fecha o banco
+});
